@@ -1,6 +1,6 @@
 <?php
 
-namespace ppc\core;
+namespace PPC\core;
 
 class IConexao
 {

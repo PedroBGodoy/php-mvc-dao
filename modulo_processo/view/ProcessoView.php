@@ -1,10 +1,10 @@
 <?php
 
-namespace ppc\modulo_processo\view;
+namespace PPC\modulo_processo\view;
 
-use ppc\modulo_processo\model\Processo;
+use PPC\modulo_processo\model\Processo;
 
-class ManterProcessoView
+class ProcessoView
 {
     public function mostrarProcesso(Processo $processo): string
     {

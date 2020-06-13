@@ -1,18 +1,18 @@
 <?php
 
-use ppc\core\Conexao;
-use ppc\modulo_processo\dao\ProcessoDAO;
-use ppc\modulo_processo\view\ManterProcessoView;
+use PPC\core\Conexao;
+use PPC\modulo_processo\dao\ProcessoDAO;
+use PPC\modulo_processo\view\ProcessoView;
 
 class ProcessoController
 {
     private ProcessoDAO $processoDAO;
-    private ManterProcessoView $processoView;
+    private ProcessoView $processoView;
 
     public function __construct()
     {
         $this->processoDAO = new ProcessoDAO(new Conexao());
-        $this->processoView = new ManterProcessoView();
+        $this->processoView = new ProcessoView();
     }
 
     public function getProcesso()

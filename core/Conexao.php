@@ -1,16 +1,22 @@
 <?php
 
-namespace ppc\core;
+namespace PPC\core;
 
 class Conexao implements IConexao
 {
     public $pdo;
 
-    public function execute(string $sql)
+    public function prepare(string $sql)
     {
     }
 
-    public function fetchAll()
+    public function execute(): bool
     {
+        return false;
+    }
+
+    public function fetchAll(): array
+    {
+        return [];
     }
 }
